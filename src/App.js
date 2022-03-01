@@ -26,9 +26,6 @@ const firestore = firebase.firestore();
 const analytics = firebase.analytics();
 
 function App() {
-  useEffect(() => {
-    console.clear();
-  });
   const [user] = useAuthState(auth);
 
   return (
@@ -79,7 +76,7 @@ function ChatRoom() {
   const dummy = useRef();
 
   const messagesRef = firestore.collection("messages");
-  const query = messagesRef.orderBy("createdAt").limit(25);
+  const query = messagesRef.orderBy("createdAt");
 
   const [messages] = useCollectionData(query, { idField: "id" });
 
@@ -128,6 +125,9 @@ function ChatRoom() {
 function ChatMessage(props) {
   const { text, uid, photoURL } = props.message;
 
+  console.log("====================================");
+  console.log(text);
+  console.log("====================================");
   const messageClass = uid === auth.currentUser.uid ? "sent" : "received";
 
   return (
