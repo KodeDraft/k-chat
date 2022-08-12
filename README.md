@@ -1,7 +1,8 @@
-# React Firebase Super Chat
+# `React k-CHAT`
 
 A simple fullstack chat demo with React and Firebase. 
 
-Watch on full [React Firebase Chat Tutorial](https://youtu.be/zQyrwxMPm88) on YouTube. 
+## Done With React JS
 
-[Live demo](https://fireship-demos.web.app/)
+
+[Live demo](https://koushik.stsltd.in/k-chat)
