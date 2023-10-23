@@ -12,12 +12,12 @@ import { useCollectionData } from "react-firebase-hooks/firestore";
 
 // FIREBASE INITALIZE
 firebase.initializeApp({
-  apiKey: "AIzaSyCQ-vOrwz2nJ3mTkx8hWPvAOMeKZWOL_ys",
-  authDomain: "firechat-react-d051b.firebaseapp.com",
-  projectId: "firechat-react-d051b",
-  storageBucket: "firechat-react-d051b.appspot.com",
-  messagingSenderId: "893293845915",
-  appId: "1:893293845915:web:8dabc5beaf4140c9e3553e",
+  apiKey: "***************",
+  authDomain: "************",
+  projectId: "****************",
+  storageBucket: "*******************",
+  messagingSenderId: "*******************",
+  appId: "**************************",
 });
 
 // CREATING VARIABLES TO USE FIREBASE EASY
@@ -125,9 +125,6 @@ function ChatRoom() {
 function ChatMessage(props) {
   const { text, uid, photoURL } = props.message;
 
-  console.log("====================================");
-  console.log(text);
-  console.log("====================================");
   const messageClass = uid === auth.currentUser.uid ? "sent" : "received";
 
   return (
