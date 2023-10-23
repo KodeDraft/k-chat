@@ -1,4 +1,4 @@
-# `React k-CHAT`
+# `k-CHAT`
 
 A simple full-stack chat demo with React and Firebase.
 
